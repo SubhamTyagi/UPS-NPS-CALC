@@ -325,7 +325,7 @@ st.subheader("Pension Scheme Comparison after Retirement")
 st.dataframe(df)
 
 st.subheader("All benefits")
-st.markdown(f"**Total Amount Paid in NPS:** {format_inr(total_nps_paid)}+ after death {format_inr(nps_corpus * annuity_pct)}")
+st.markdown(f"**Total Amount Paid in NPS:** {format_inr(total_nps_paid)}")
 st.markdown(f"**Total Amount Paid in UPS:** {format_inr(total_ups_paid)}")
 
 
