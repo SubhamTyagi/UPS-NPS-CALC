@@ -1,7 +1,7 @@
 # Compare the UPS and NPS benefits 
 ## This python script compares the Unified Pension Scheme and National Pension Scheme
 
-## Open this website
+## Open this website https://ups-nps.streamlit.app/
 #### This python script will compare the UPS vs NPS with promotions, Increments and pay commissions increments
 
 ## FEATURES
