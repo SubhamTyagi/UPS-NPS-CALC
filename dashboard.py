@@ -110,8 +110,6 @@ def generate_cpc_tables(base_matrix, pay_comm_increase):
 
 pay_matrix_full = generate_cpc_tables(pay_matrix, pay_comm_increase)
 
-
-
 # --- Simulation Timeline ---
 retire_year = dob.year + retirement_age 
 retire_date = datetime(retire_year, joining_date.month, joining_date.day)
@@ -138,14 +136,13 @@ cpc_years_sorted = [(BASE_CPC, joining_date.year)] + [(cpc, y) for cpc, y in CPC
 cpc_pointer = 0
 basic_pay = pay_matrix_full.query("Level == @level and Pay_Position == @position and CPC == @current_cpc")['Basic_Pay'].values[0]
 
-
 for i, month in enumerate(months):
     year = month.year
     is_jan = month.month == 1
     is_july = month.month == 7
     pay_commission_applied = ""
     
-    # DA increases every Jan and July at 2%
+    # DA increases every Jan and July
     if is_jan or is_july:
         current_da += da_increment_rate
 

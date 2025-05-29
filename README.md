@@ -22,4 +22,9 @@ streamlit run dashboard.py
 
 GPL 3.0
 
+## Credit
+```
+ Inspiration and basic code from great project at https://github.com/adarsh1002/UPS_NPS
+```
+
 
